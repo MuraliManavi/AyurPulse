@@ -1,25 +1,46 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>AyurPulse</title>
+  <title>AyurPulse Dashboard</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<h1>AyurPulse Health Monitor</h1>
+<div class="container">
 
-<div class="card">
-  <h2>Heart Rate</h2>
-  <p id="bpm">--</p>
+  <header>
+    <h1>🌿 AyurPulse</h1>
+    <p>Real-Time Ayurvedic Health Monitor</p>
+  </header>
+
+  <div class="cards">
+
+    <div class="card vata">
+      <h2>❤️ Heart Rate</h2>
+      <p id="bpm">--</p>
+      <span>BPM</span>
+    </div>
+
+    <div class="card pitta">
+      <h2>🫁 SpO2</h2>
+      <p id="spo2">--</p>
+      <span>% Oxygen</span>
+    </div>
+
+    <div class="card kapha">
+      <h2>📡 Status</h2>
+      <p id="status">Connecting...</p>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>© 2026 AyurPulse | Ancient + Modern Tech</p>
+  </footer>
+
 </div>
 
-<div class="card">
-  <h2>SpO2</h2>
-  <p id="spo2">--</p>
-</div>
-
-<script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-database.js"></script>
 <script src="script.js"></script>
 
 </body>
